@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: I curated data and trained models — and in turn, data, models, and results also trained me.
 
 profile:
   align: right
