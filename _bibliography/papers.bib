@@ -1,10 +1,8 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-
 @inproceedings{Wang2023MathPileAB,
+  abbr={NeurIPS D&B 2024},
   title={MathPile: A Billion-Token-Scale Pretraining Corpus for Math},
   author={Zengzhi Wang and Xuefeng Li and Rui Xia and Pengfei Liu},
   booktitle={Neural Information Processing Systems},
@@ -12,37 +10,43 @@
   url={https://proceedings.neurips.cc/paper_files/paper/2024/hash/2d0be3cd5173c10b6ec075d1c393a13d-Abstract-Datasets_and_Benchmarks_Track.html},
   abstract={High-quality, large-scale corpora are the cornerstone of building foundation models. In this work, we introduce MathPile, a diverse and high-quality math-centric corpus comprising about 9.5 billion tokens. Throughout its creation, we adhered to the principle of “less is more”, firmly believing in the supremacy of data quality over quantity, even in the pre-training phase. Our meticulous data collection and processing efforts included a complex suite of preprocessing, prefiltering, language identification, cleaning, filtering, and deduplication, ensuring the high quality of our corpus. Furthermore, we performed data contamination detection on downstream benchmark test sets to eliminate duplicates and conducted continual pre-training experiments, booting the performance on common mathematical reasoning benchmarks. We aim for our MathPile to boost language models’ mathematical reasoning abilities and open-source its different versions and processing scripts to advance the field.},
   selected={true},
+  pdf={https://openreview.net/pdf?id=RSvhU69sbG},
+  poster={https://drive.google.com/file/d/1qGQkpoeeXenriQMDaah2VUaB8pL08uGd/view?usp=sharing},
+  slides={https://docs.google.com/presentation/d/1SccMNlzCVH87z-do_DmCDsqJvpYCLA-CGbHRar3MIs4/edit?usp=sharing},
+  datasets={https://huggingface.co/datasets/GAIR/MathPile},
+  github={https://github.com/GAIR-NLP/MathPile}
+}
+
+@inproceedings{Zhou2024ProgrammingEveryExample,
+  abbr={ICML 2025},
+  title={Programming Every Example: Lifting Pre-training Data Quality like Experts at Scale},
+  author={Fan Zhou* and Zengzhi Wang* and Qian Liu and Junlong Li and Pengfei Liu},
+  booktitle={International Conference on Machine Learning},
+  year={2025},
+  volume={abs/2409.17115},
+  url={https://arxiv.org/pdf/2409.17115},
+  abstract={Large language model pre-training has traditionally relied on human experts to craft heuristics for improving the corpora quality, resulting in numerous rules developed to date. However, these rules lack the flexibility to address the unique characteristics of individual example effectively. Meanwhile, applying tailored rules to every example is impractical for human experts. In this paper, we demonstrate that even small language models, with as few as 0.3B parameters, can exhibit substantial data refining capabilities comparable to those of human experts. We introduce Programming Every Example (ProX), a novel framework that treats data refinement as a programming task, enabling models to refine corpora by generating and executing fine-grained operations, such as string normalization, for each individual example at scale. Experimental results show that models pre-trained on ProX-curated data outperform either original data or data filtered by other selection methods by more than 2% across various downstream benchmarks. Its effectiveness spans various model sizes and pre-training corpora, including C4, RedPajama-V2, FineWeb, FineWeb-Edu, and DCLM. Furthermore, ProX exhibits significant potential in domain-specific continual pre-training: without domain specific design, models trained on OpenWebMath refined by ProX outperform human-crafted rule-based methods, improving average accuracy by 7.6% over Mistral-7B, with 14.6% for Llama-2-7B and 20.3% for CodeLlama-7B, all within 10B tokens to be comparable to models like Llemma-7B trained on 200B tokens. Further analysis highlights that ProX significantly saves training FLOPs, offering a promising path for efficient LLM pre-training. We are open-sourcing ProX with>500B corpus, models, and sharing all training and implementation details for reproducible research and future innovation.},
+  selected={true},
+  pdf={https://arxiv.org/pdf/2409.17115},
+  huggingface={https://huggingface.co/gair-prox},
+  github={https://github.com/GAIR-NLP/ProX},
+  annotation={* equal contribution},
 }
 
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{Zhou2025MegaMathPT,
+  abbr={Preprint 2025},
+  title={MegaMath: Pushing the Limits of Open Math Corpora},
+  author={Fan Zhou* and Zengzhi Wang* and Nikhil Ranjan and Zhoujun Cheng and Liping Tang and Guowei He and Zhengzhong Liu and Eric P. Xing},
+  year={2025},
+  booktitle={Preprint},
+  url={https://api.semanticscholar.org/CorpusID:277510325},
+  selected={true},
+  abstract={Mathematical reasoning is a cornerstone of human intelligence and a key benchmark for advanced capabilities in large language models (LLMs). However, the research community still lacks an open, large-scale, high-quality corpus tailored to the demands of math-centric LLM pre-training. We present MegaMath, an open dataset curated from diverse, math-focused sources through following practices: (1) Revisiting web data: We re-extracted mathematical documents from Common Crawl with math-oriented HTML optimizations, fasttext-based filtering and deduplication, all for acquiring higher-quality data on the Internet. (2) Recalling Math-related code data: We identified high quality math-related code from large code training corpus, Stack-V2, further enhancing data diversity. (3) Exploring Synthetic data: We synthesized QA-style text, math-related code, and interleaved text-code blocks from web data or code data. By integrating these strategies and validating their effectiveness through extensive ablations, MegaMath delivers 371B tokens with the largest quantity and top quality among existing open math pre-training datasets.},
+  pdf={https://arxiv.org/pdf/2504.02807},
+  datasets={https://huggingface.co/datasets/LLM360/MegaMath},
+  github={https://github.com/LLM360/MegaMath},
+  annotation={* equal contribution},
 }
 
 @article{PhysRev.47.777,
