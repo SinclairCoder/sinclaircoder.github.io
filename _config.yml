@@ -154,6 +154,10 @@ collections:
   projects:
     output: true
 
+news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+news_limit: 7 # leave blank to include all the news in the `_news` folder
+
+
 # -----------------------------------------------------------------------------
 # Jekyll settings
 # -----------------------------------------------------------------------------
@@ -193,6 +197,11 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _pages/404.md
+  - _pages/cv.md
+  - _pages/profiles.md
+  - _pages/teaching.md
+  - _pages/publications.md
 keep_files:
   - CNAME
   - .nojekyll
