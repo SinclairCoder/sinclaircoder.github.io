@@ -5,7 +5,7 @@
   abbr={NeurIPS D&B 2024},
   title={MathPile: A Billion-Token-Scale Pretraining Corpus for Math},
   author={Zengzhi Wang and Xuefeng Li and Rui Xia and Pengfei Liu},
-  booktitle={Neural Information Processing Systems},
+  booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
   year={2024},
   url={https://proceedings.neurips.cc/paper_files/paper/2024/hash/2d0be3cd5173c10b6ec075d1c393a13d-Abstract-Datasets_and_Benchmarks_Track.html},
   abstract={High-quality, large-scale corpora are the cornerstone of building foundation models. In this work, we introduce MathPile, a diverse and high-quality math-centric corpus comprising about 9.5 billion tokens. Throughout its creation, we adhered to the principle of “less is more”, firmly believing in the supremacy of data quality over quantity, even in the pre-training phase. Our meticulous data collection and processing efforts included a complex suite of preprocessing, prefiltering, language identification, cleaning, filtering, and deduplication, ensuring the high quality of our corpus. Furthermore, we performed data contamination detection on downstream benchmark test sets to eliminate duplicates and conducted continual pre-training experiments, booting the performance on common mathematical reasoning benchmarks. We aim for our MathPile to boost language models’ mathematical reasoning abilities and open-source its different versions and processing scripts to advance the field.},
@@ -14,7 +14,8 @@
   poster={https://drive.google.com/file/d/1qGQkpoeeXenriQMDaah2VUaB8pL08uGd/view?usp=sharing},
   slides={https://docs.google.com/presentation/d/1SccMNlzCVH87z-do_DmCDsqJvpYCLA-CGbHRar3MIs4/edit?usp=sharing},
   datasets={https://huggingface.co/datasets/GAIR/MathPile},
-  github={https://github.com/GAIR-NLP/MathPile}
+  github={https://github.com/GAIR-NLP/MathPile},
+  google_scholar_id={Wp0gIr-vW9MC}
 }
 
 @inproceedings{Zhou2024ProgrammingEveryExample,
@@ -31,6 +32,7 @@
   huggingface={https://huggingface.co/gair-prox},
   github={https://github.com/GAIR-NLP/ProX},
   annotation={* equal contribution},
+  google_scholar_id={aqlVkmm33-oC},
 }
 
 
@@ -47,101 +49,134 @@
   datasets={https://huggingface.co/datasets/LLM360/MegaMath},
   github={https://github.com/LLM360/MegaMath},
   annotation={* equal contribution},
+  google_scholar_id={IWHjjKOFINEC},
 }
 
 
-@inproceedings{Zhou2025MegaMathPT,
+@misc{wang2025octothinker,
   abbr={Preprint 2025},
-  title={MegaMath: Pushing the Limits of Open Math Corpora},
-  author={Fan Zhou* and Zengzhi Wang* and Nikhil Ranjan and Zhoujun Cheng and Liping Tang and Guowei He and Zhengzhong Liu and Eric P. Xing},
+  title={OctoThinker: Revisiting Mid-Training In the Era of RL Scaling},
+  author={Wang*, Zengzhi and Zhou*, Fan and Li*, Xuefeng and Liu, Pengfei},
   year={2025},
+  howpublished={\url{https://tinyurl.com/OctoThinker}},
+  note={Notion Blog},
   booktitle={Preprint},
-  url={https://api.semanticscholar.org/CorpusID:277510325},
-  selected={true},
-  abstract={Mathematical reasoning is a cornerstone of human intelligence and a key benchmark for advanced capabilities in large language models (LLMs). However, the research community still lacks an open, large-scale, high-quality corpus tailored to the demands of math-centric LLM pre-training. We present MegaMath, an open dataset curated from diverse, math-focused sources through following practices: (1) Revisiting web data: We re-extracted mathematical documents from Common Crawl with math-oriented HTML optimizations, fasttext-based filtering and deduplication, all for acquiring higher-quality data on the Internet. (2) Recalling Math-related code data: We identified high quality math-related code from large code training corpus, Stack-V2, further enhancing data diversity. (3) Exploring Synthetic data: We synthesized QA-style text, math-related code, and interleaved text-code blocks from web data or code data. By integrating these strategies and validating their effectiveness through extensive ablations, MegaMath delivers 371B tokens with the largest quantity and top quality among existing open math pre-training datasets.},
-  pdf={https://arxiv.org/pdf/2504.02807},
-  datasets={https://huggingface.co/datasets/LLM360/MegaMath},
+  year={2025},
   github={https://github.com/LLM360/MegaMath},
+  annotation={* equal contribution, working in progress},
+  selected={true},
+  poster={https://github.com/GAIR-NLP/OctoThinker/blob/main/assets/first-release.pdf},
+  huggingface={https://huggingface.co/OctoThinker},
+}
+
+
+@inproceedings{wang2024is,
+  abbr={COLM 2024},
+  title={Is Chat{GPT} a Good Sentiment Analyzer?},
+  author={Zengzhi Wang and Qiming Xie and Yi Feng and Zixiang Ding and Zinong Yang and Rui Xia},
+  booktitle={First Conference on Language Modeling},
+  year={2024},
+  url={https://openreview.net/forum?id=mUlLf50Y6H},
+  pdf={https://openreview.net/pdf?id=mUlLf50Y6H},
+  abstract={
+  Recently, ChatGPT has drawn great attention from both the research community and the public. We are particularly interested in whether it can serve as a universal sentiment analyzer. To this end, in this work, we provide a comprehensive evaluation of ChatGPT on the understanding of \emph{opinions}, \emph{sentiments}, and \emph{emotions} contained in the text. Specifically, we evaluate it in three settings, including \emph{standard} evaluation, \emph{polarity shift} evaluation and \emph{open-domain} evaluation. We conduct an evaluation on 7 representative sentiment analysis tasks covering 17 benchmark datasets and compare ChatGPT with fine-tuned BERT and corresponding state-of-the-art (SOTA) models on them. We also attempt several popular prompting techniques to elicit the ability further. Moreover, we conduct human evaluation and present some qualitative case studies to gain a deep comprehension of its sentiment analysis capabilities.},
+  poster={https://drive.google.com/file/d/1RQmudQtLz6phrfJs2C3C0F93e08YIqpr/view?usp=sharing},
+  google_scholar_id={QIV2ME_5wuYC},
+}
+
+
+
+@inproceedings{huang2024olympicarena,
+  abbr={NeurIPS D&B 2024},
+  title={OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent {AI}},
+  author={Zhen Huang and Zengzhi Wang and Shijie Xia and Xuefeng Li and Haoyang Zou and Ruijie Xu and Run-Ze Fan and Lyumanshan Ye and Ethan Chern and Yixin Ye and Yikai Zhang and Yuqing Yang and Ting Wu and Binjie Wang and Shichao Sun and Yang Xiao and Yiyuan Li and Fan Zhou and Steffi Chern and Yiwei Qin and Yan Ma and Jiadi Su and Yixiu Liu and Yuxiang Zheng and Shaoting Zhang and Dahua Lin and Yu Qiao and Pengfei Liu},
+  booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  year={2024},
+  url={https://openreview.net/forum?id=ayF8bEKYQy},
+  pdf={https://openreview.net/pdf?id=ayF8bEKYQy},
+  abstract={The evolution of Artificial Intelligence (AI) has been significantly accelerated by advancements in Large Language Models (LLMs) and Large Multimodal Models (LMMs), gradually showcasing potential cognitive reasoning abilities in problem-solving and scientific discovery (i.e., AI4Science) once exclusive to human intellect. To comprehensively evaluate current models' performance in cognitive reasoning abilities, we introduce OlympicArena, which includes 11,163 bilingual problems across both text-only and interleaved text-image modalities. These challenges encompass a wide range of disciplines spanning seven fields and 62 international Olympic competitions, rigorously examined for data leakage. We argue that the challenges in Olympic competition problems are ideal for evaluating AI's cognitive reasoning due to their complexity and interdisciplinary nature, which are essential for tackling complex scientific challenges and facilitating discoveries. Beyond evaluating performance across various disciplines using answer-only criteria, we conduct detailed experiments and analyses from multiple perspectives. We delve into the models' cognitive reasoning abilities, their performance across different modalities, and their outcomes in process-level evaluations, which are vital for tasks requiring complex reasoning with lengthy solutions. Our extensive evaluations reveal that even advanced models like GPT-4o only achieve a 39.97% overall accuracy (28.67% for mathematics and 29.71% for physics), illustrating current AI limitations in complex reasoning and multimodal integration. Through the OlympicArena, we aim to advance AI towards superintelligence, equipping it to address more complex challenges in science and beyond. We also provide a comprehensive set of resources to support AI research, including a benchmark dataset, an open-source annotation platform, a detailed evaluation tool, and a leaderboard with automatic submission features.},
+  github={https://github.com/GAIR-NLP/OlympicArena},
+  datasets={https://huggingface.co/datasets/GAIR/OlympicArena},
+  google_scholar_id={ULOm3_A8WrAC},
+}
+
+
+@article{Xu2024BenchmarkingBL,
+  abbr={Preprint 2024},
+  title={Benchmarking Benchmark Leakage in Large Language Models},
+  author={Ruijie Xu* and Zengzhi Wang* and Run-Ze Fan* and Pengfei Liu},
+  journal={Preprint},
+  year={2024},
+  volume={abs/2404.18824},
+  url={https://arxiv.org/abs/2404.18824},
+  pdf={https://arxiv.org/pdf/2404.18824},
+  github={https://github.com/GAIR-NLP/benbench},
+  abstract={Amid the expanding use of pre-training data, the phenomenon of benchmark dataset leakage has become increasingly prominent, exacerbated by opaque training processes and the often undisclosed inclusion of supervised data in contemporary Large Language Models (LLMs). This issue skews benchmark effectiveness and fosters potentially unfair comparisons, impeding the field's healthy development. To address this, we introduce a detection pipeline utilizing Perplexity and N-gram accuracy, two simple and scalable metrics that gauge a model's prediction precision on benchmark, to identify potential data leakages. By analyzing 31 LLMs under the context of mathematical reasoning, we reveal substantial instances of training even test set misuse, resulting in potentially unfair comparisons. These findings prompt us to offer several recommendations regarding model documentation, benchmark setup, and future evaluations. Notably, we propose the "Benchmark Transparency Card" to encourage clear documentation of benchmark utilization, promoting transparency and healthy developments of LLMs. we have made our leaderboard, pipeline implementation, and model predictions publicly available, fostering future research.},
+  google_scholar_id={Zph67rFs4hoC},
   annotation={* equal contribution},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+
+@inproceedings{xie-etal-2024-ask,
+    abbr={ACL 2024},
+    title = "Ask Again, Then Fail: Large Language Models' Vacillations in Judgment",
+    author = "Xie*, Qiming  and
+      Wang*, Zengzhi  and
+      Feng, Yi  and
+      Xia, Rui",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.577/",
+    doi = "10.18653/v1/2024.acl-long.577",
+    pages = "10709--10745",
+    abstract = "We observe that current large language models often waver in their judgments when faced with follow-up questions, even if the original judgment was correct. This wavering presents a significant challenge for generating reliable responses and building user trust. To comprehensively assess this issue, we introduce a Follow-up Questioning Mechanism along with two metrics to quantify this inconsistency, confirming its widespread presence in current large language models. Furthermore, to mitigate this issue, we explore various prompting strategies for closed-source models, and develop a training-based framework Unwavering-FQ that teaches large language models to maintain their originally correct judgments through synthesized high-quality preference data. Our experimental results confirm the effectiveness of our framework and its ability to enhance the general capabilities of large language models.",
+    pdf={https://aclanthology.org/2024.acl-long.577.pdf},
+    datasets={https://huggingface.co/datasets/NUSTM/judgment-consistency-preference-data},
+    google_scholar_id={_FxGoFyzp5QC},
+    annotation={* equal contribution},
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@ARTICLE{wang2024unifiedabsa,
+  abbr={IEEE TKDE 2024},
+  author={Wang, Zengzhi and Xia, Rui and Yu, Jianfei},
+  journal={IEEE Transactions on Knowledge and Data Engineering}, 
+  title={Unified ABSA via Annotation-Decoupled Multi-Task Instruction Tuning}, 
+  year={2024},
+  volume={36},
+  number={11},
+  pages={7242-7254},
+  keywords={Task analysis;Multitasking;Compounds;Sentiment analysis;Annotations;Tuning;Adaptation models;Aspect-Based sentiment analysis;fine-grained opinion mining;natural language processing;sentiment analysis;text mining},
+  doi={10.1109/TKDE.2024.3392836},
+  abstract={Aspect-Based Sentiment Analysis (ABSA) aims to provide fine-grained aspect-level sentiment information. Different ABSA tasks are designed for different real-world applications. However, application scenarios of ABSA tasks are often diverse, typically requiring training separate systems for each task on the task-specific labeled data and making separate predictions. Second, different tasks often contain shared sentiment elements. Training task-specific models either fail to exploit the shared knowledge among multiple ABSA tasks effectively or neglect the complementarity between tasks. Third, despite the existence of the compound ABSA task such as quadruple extraction and triple extraction, it is not easy to obtain satisfactory performance due to the coupling of multiple elements. To tackle these issues, we present UnifiedABSA, a general-purpose ABSA framework based on multi-task instruction tuning, aiming at “one-model-for-all-tasks”. We also introduce a new annotation-decoupled multi-task learning mechanism that only depends on annotation on the compound task rather than all tasks. This mechanism not only fully utilizes the existing annotations from the compound task, but also alleviates the complicated coupling relationship among multiple elements, making the learning more effective. Extensive experiments show that UnifiedABSA can consistently outperform dedicated models in fully-supervised and low-resource settings for almost all 11 ABSA tasks. We also conduct further experiments to demonstrate the general applicability of our framework.},
+  pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10507027},
+  google_scholar_id={KlAtU1dfN6UC}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{10.1145/3539618.3591940,
+abbr={SIGIR 2023},
+author = {Wang, Zengzhi and Xie, Qiming and Xia, Rui},
+title = {A Simple yet Effective Framework for Few-Shot Aspect-Based Sentiment Analysis},
+year = {2023},
+isbn = {9781450394086},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3539618.3591940},
+doi = {10.1145/3539618.3591940},
+abstract = {The pre-training and fine-tuning paradigm has become the main-stream framework in the field of Aspect-Based Sentiment Analysis (ABSA). Although it has achieved sound performance in the domains containing enough fine-grained aspect-sentiment annotations, it is still challenging to conduct few-shot ABSA in domains where manual annotations are scarce. In this work, we argue that two kinds of gaps, i.e., domain gap and objective gap, hinder the transfer of knowledge from pre-training language models (PLMs) to ABSA tasks. To address this issue, we introduce a simple yet effective framework called FS-ABSA, which involves domain-adaptive pre-training and text-infilling fine-tuning. We approach the End-to-End ABSA task as a text-infilling problem and perform domain-adaptive pre-training with the text-infilling objective, narrowing the two gaps and consequently facilitating the knowledge transfer. Experiments show that the resulting model achieves more compelling performance than baselines under the few-shot setting while driving the state-of-the-art performance to a new level across datasets under the fully-supervised setting. Moreover, we apply our framework to two non-English low-resource languages to demonstrate its generality and effectiveness.},
+booktitle = {Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {1765–1770},
+numpages = {6},
+keywords = {few-shot learning, opinion mining, sentiment analysis},
+location = {Taipei, Taiwan},
+series = {SIGIR '23},
+github = {https://github.com/NUSTM/FS-ABSA},
+google_scholar_id={eQOLeE2rZwMC},
 }
