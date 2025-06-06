@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-05-01
+date: 2025-04-29
 inline: true
 related_posts: false
 ---
 
-One paper ([ProX](https://arxiv.org/abs/2409.17115)) accepted by ICML'25. 
+Say hi to 🐙 OctoThinker - our new mid-training efforts for building strong reasoning base models tailored for the RL scaling era.
