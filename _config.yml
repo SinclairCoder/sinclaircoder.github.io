@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Zengzhi Wang | Shanghai Jiao Tong University # the website title (if blank, full name will be used instead)
 first_name: Zengzhi
 middle_name:
 last_name: Wang
@@ -203,6 +203,10 @@ exclude:
   - _pages/profiles.md
   - _pages/teaching.md
   - _pages/repositories.md
+  - _pages/dropdown.md
+  - _pages/blog.md
+  - _pages/projects.md
+
 
 keep_files:
   - CNAME

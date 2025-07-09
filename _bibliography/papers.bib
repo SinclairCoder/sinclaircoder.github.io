@@ -37,12 +37,12 @@
 
 
 @inproceedings{Zhou2025MegaMathPT,
-  abbr={Preprint 2025},
+  abbr={COLM 2025},
   title={MegaMath: Pushing the Limits of Open Math Corpora},
   author={Fan Zhou* and Zengzhi Wang* and Nikhil Ranjan and Zhoujun Cheng and Liping Tang and Guowei He and Zhengzhong Liu and Eric P. Xing},
   year={2025},
-  booktitle={Preprint},
-  url={https://api.semanticscholar.org/CorpusID:277510325},
+  booktitle={Second Conference on Language Modeling},
+  url={https://arxiv.org/abs/2504.02807},
   selected={true},
   abstract={Mathematical reasoning is a cornerstone of human intelligence and a key benchmark for advanced capabilities in large language models (LLMs). However, the research community still lacks an open, large-scale, high-quality corpus tailored to the demands of math-centric LLM pre-training. We present MegaMath, an open dataset curated from diverse, math-focused sources through following practices: (1) Revisiting web data: We re-extracted mathematical documents from Common Crawl with math-oriented HTML optimizations, fasttext-based filtering and deduplication, all for acquiring higher-quality data on the Internet. (2) Recalling Math-related code data: We identified high quality math-related code from large code training corpus, Stack-V2, further enhancing data diversity. (3) Exploring Synthetic data: We synthesized QA-style text, math-related code, and interleaved text-code blocks from web data or code data. By integrating these strategies and validating their effectiveness through extensive ablations, MegaMath delivers 371B tokens with the largest quantity and top quality among existing open math pre-training datasets.},
   pdf={https://arxiv.org/pdf/2504.02807},
@@ -52,21 +52,21 @@
   google_scholar_id={IWHjjKOFINEC},
 }
 
-
-@misc{wang2025octothinker,
-  abbr={Preprint 2025},
+@inproceedings{wang2025octothinker,
+  abbr={AI4Math@ICML 2025},
   title={OctoThinker: Revisiting Mid-Training In the Era of RL Scaling},
   author={Wang*, Zengzhi and Zhou*, Fan and Li*, Xuefeng and Liu, Pengfei},
   year={2025},
-  howpublished={\url{https://tinyurl.com/OctoThinker}},
-  note={Notion Blog},
-  booktitle={Preprint},
-  year={2025},
-  github={https://github.com/LLM360/MegaMath},
+  pdf={https://arxiv.org/pdf/2506.20512},
+  url={https://arxiv.org/abs/2506.20512},
+  booktitle={2nd AI for Math Workshop @ ICML},
+  github={https://github.com/GAIR-NLP/OctoThinker},
   annotation={* equal contribution, working in progress},
   selected={true},
+  abstract={Different base language model families, such as Llama and Qwen, exhibit divergent behaviors during post-training with reinforcement learning (RL), especially on reasoning-intensive tasks. What makes a base language model suitable for reinforcement learning? Gaining deeper insight into this question is essential for developing RL-scalable foundation models of the next generation. In this work, we investigate how mid-training strategies shape RL dynamics, focusing on two representative model families: Qwen and Llama. Our study reveals that (1) high-quality mathematical corpora, such as MegaMath-Web-Pro, significantly improve both base model and RL performance, while existing alternatives (e.g., FineMath-4plus) fail to do so; (2) further adding QA-style data, particularly long chain-of-thought (CoT) reasoning examples, enhances RL outcomes, and instruction data further unlocks this effect; (3) while long-CoT improves reasoning depth, it can also induce verbosity of model responses and unstability of RL training, underscoring the importance of data formatting; (4) scaling mid-training consistently leads to stronger downstream RL performance. Building on these insights, we introduce a two-stage mid-training strategy, Stable-then-Decay, in which base models are first trained on 200B tokens with a constant learning rate, followed by 20B tokens across three CoT-focused branches with learning rate decay. This yields OctoThinker, a family of models demonstrating strong RL compatibility and closing the performance gap with more RL-friendly model families, i.e., Qwen. We hope our work will help shape pre-training strategies for foundation models in the RL era. To support further research, we release our open-source models along with a curated math reasoning-intensive corpus of over 70 billion tokens (i.e., MegaMath-Web-Pro-Max).},
   poster={https://github.com/GAIR-NLP/OctoThinker/blob/main/assets/first-release.pdf},
   huggingface={https://huggingface.co/OctoThinker},
+  google_scholar_id={hC7cP41nSMkC},
 }
 
 
