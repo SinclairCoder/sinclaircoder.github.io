@@ -37,3 +37,6 @@ I curated data and trained models — and in turn, data, models, and results als
 Currently, I’m exploring how to scale data quality and advance the scientific understanding of foundation language models.
 
 
+<div style="display: flex; justify-content: center; gap: 20px;">
+<img src="assets/img/research_roadmap.png" alt="Data Pipeline" style="width:80%;">
+</div>
