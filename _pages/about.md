@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Shanghai Jiao Tong University. (zengzhi.wang [at] sjtu dot edu dot cn). 
 
