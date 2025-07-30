@@ -40,4 +40,4 @@ nav_order: 2
 
 - **Introduction to T5: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer** <br>
   *Jul. 25, 2022*  @ NUSTM (Tutorial) <br>
-  [<i class="fas fa-file-pdf"></i> slides](https://sinclaircoder.github.io/asset/pdf/Intro2T5_zzwang.pdf)
+  [<i class="fas fa-file-pdf"></i> slides](https://sinclaircoder.github.io/assets/pdf/Intro2T5_zzwang.pdf)
