@@ -34,8 +34,7 @@ I curated data and trained models — and in turn, data, models, and results als
 - **General Pre-training Corpora Refinement:** Co-creator of [ProX](https://github.com/GAIR-NLP/ProX)([ICML 2025](https://arxiv.org/abs/2409.17115v2)), a scalable framework that leverages tiny language models to automatically refine large-scale corpora, along with refined byproducts, such as [FineWeb-Pro (100B tokens)](https://huggingface.co/datasets/gair-prox/FineWeb-pro) and [DCLM-Pro (>500B tokens)](https://huggingface.co/datasets/gair-prox/DCLM-pro). Check [Huggingface](https://huggingface.co/gair-prox) for more releases.
 - **Data-centric Recipes for Building Foundation Models:** Initiator of [OctoThinker](https://github.com/GAIR-NLP/OctoThinker), unveiling the principles behind RL-friendly base language models and lifting foundation model capabilities through large-scale mid-training.
 
-Currently, I’m exploring how to scale data quality and advance the scientific understanding of foundation language models.
-
+Now, I’m scaling both the quality and quantity of data while advancing the scientific understanding of foundation models. 😄
 
 <div style="display: flex; justify-content: center; gap: 20px;">
 <img src="assets/img/research_roadmap.png" alt="Data Pipeline" style="width:80%;">
