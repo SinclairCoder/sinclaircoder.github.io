@@ -14,6 +14,7 @@ nav_order: 2
 
 
 - **OctoThinker: Mid-training Incentivizes RL Scaling** <br>
+  *Aug. 21, 2025*  @ ERNIE team, Baidu <br>
   *Jun. 27, 2025*  @ FAIR/GenAI team, Meta <br>
   *Jul. 24, 2025*  @ Hunyuan team, Tencent <br>
   [<i class="fas fa-file-pdf"></i> slides](https://docs.google.com/presentation/d/19RGW53bkplf5mxpEsGDGBERJrImiCG0UN_Huu-LaOrc/edit?usp=sharing)
