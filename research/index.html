@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research | Zengzhi Wang</title>
+    <meta
+      name="description"
+      content="Research by Zengzhi Wang on data engineering and the science of how training data shapes foundation language models."
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css?v=22" />
+    <link rel="stylesheet" href="../refinements.css?v=13" />
+  </head>
+  <body class="plain-research-page" data-root="../">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="topnav">
+        <div class="topnav-inner">
+          <nav class="topnav-links" aria-label="Primary navigation">
+            <a href="../">Home</a>
+            <a class="is-active" href="./" aria-current="page">Research</a>
+            <a href="../publications/">Publications</a>
+            <a href="../open-source/">Open Source</a>
+            <a href="../updates/">Updates</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page subpage" id="main">
+        <header class="page-masthead">
+          <div class="page-masthead-grid">
+            <h1>Research</h1>
+            <p>I study the engineering of training data—and the science of how it shapes model behavior.</p>
+          </div>
+        </header>
+
+        <section class="roadmap-section research-roadmap" aria-labelledby="roadmap-title">
+          <div class="roadmap-heading">
+            <p class="section-kicker">Research roadmap</p>
+            <h2 id="roadmap-title">Engineering above the surface.<br /><span class="roadmap-title-line">Science beneath it.</span></h2>
+            <p>
+              I study how training data shapes model capabilities and behavior, using controlled experiments and scaling studies to guide the design
+              of scalable data recipes.
+            </p>
+          </div>
+          <button
+            type="button"
+            class="roadmap-figure"
+            data-zoom-src="../assets/img/research-roadmap-iceberg-v13-r3.png"
+            data-zoom-alt="Foundation Model at the tip of an iceberg, Data Engineering above water, and Data Science below: understanding how training data shapes model behavior."
+            aria-label="Enlarge the iceberg research roadmap"
+          >
+            <img
+              src="../assets/img/research-roadmap-iceberg-v13-r3.png"
+              alt="Foundation Model at the tip of an iceberg, Data Engineering above water, and Data Science below: understanding how training data shapes model behavior."
+              width="1536"
+              height="1024"
+            />
+            <span class="roadmap-zoom-hint" aria-hidden="true">Click to enlarge</span>
+          </button>
+        </section>
+
+        <section class="research-section research-page-section" aria-labelledby="research-title">
+          <h2 id="research-title">Selected Research</h2>
+          <p class="section-note">Selected projects on training data and model behavior, ordered by preprint date.</p>
+
+          <ol class="timeline">
+            <li class="tl-item" id="octothinker">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <span class="tl-date">Jun 2025</span>
+              <article class="tl-card">
+                <div class="tl-body">
+                  <a class="paper-title" href="https://arxiv.org/abs/2506.20512"
+                    >OctoThinker: Mid-training Incentivizes Reinforcement Learning Scaling</a
+                  >
+                  <div class="tags" aria-label="Research tags"><span>mid-training</span><span>reasoning</span><span>rl-scaling</span></div>
+                  <p class="venue">AI4Math @ ICML 2025</p>
+                  <p class="tldr">
+                    <strong>TL;DR:</strong> Mid-training data and formatting can make base models far more compatible with reinforcement learning.
+                  </p>
+                  <div class="paper-links">
+                    <a href="https://arxiv.org/pdf/2506.20512">PDF</a><a href="https://huggingface.co/OctoThinker">Models</a
+                    ><a href="https://github.com/GAIR-NLP/OctoThinker">Code</a>
+                  </div>
+                  <button type="button" class="x-disc" data-x-posts="octothinker" aria-haspopup="dialog">
+                    <svg class="x-logo" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                      />
+                    </svg>
+                    See the discussion <span class="x-disc-count">2</span>
+                  </button>
+                </div>
+                <button
+                  type="button"
+                  class="tl-figure"
+                  data-zoom-src="../assets/img/fig-octothinker.png"
+                  data-zoom-alt="OctoThinker: mid-training incentivizes RL scaling, with a MATH500 results chart comparing Llama, OctoThinker, and Qwen base models."
+                  aria-label="Enlarge OctoThinker figure"
+                >
+                  <svg
+                    class="paper-detail-preview"
+                    viewBox="610 286 790 400"
+                    role="img"
+                    aria-label="MATH500 results from the original OctoThinker figure, showing mid-training and reinforcement learning comparisons."
+                  >
+                    <image href="../assets/img/fig-octothinker.png" width="1400" height="691"></image>
+                  </svg>
+                  <span class="tl-zoom-hint" aria-hidden="true">Click to enlarge</span>
+                </button>
+              </article>
+            </li>
+
+            <li class="tl-item" id="megamath">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <span class="tl-date">Apr 2025</span>
+              <article class="tl-card">
+                <div class="tl-body">
+                  <a class="paper-title" href="https://arxiv.org/abs/2504.02807">MegaMath: Pushing the Limits of Open Math Corpora</a>
+                  <div class="tags" aria-label="Research tags"><span>pretraining</span><span>math-data</span><span>open-corpus</span></div>
+                  <p class="venue">COLM 2025</p>
+                  <p class="tldr"><strong>TL;DR:</strong> A 371B-token open math pretraining corpus combining web, code, and synthetic data.</p>
+                  <div class="paper-links">
+                    <a href="https://arxiv.org/pdf/2504.02807">PDF</a><a href="https://huggingface.co/datasets/LLM360/MegaMath">Dataset</a
+                    ><a href="https://github.com/LLM360/MegaMath">Code</a>
+                  </div>
+                  <button type="button" class="x-disc" data-x-posts="megamath" aria-haspopup="dialog">
+                    <svg class="x-logo" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                      />
+                    </svg>
+                    See the discussion <span class="x-disc-count">3</span>
+                  </button>
+                </div>
+                <button
+                  type="button"
+                  class="tl-figure"
+                  data-zoom-src="../assets/img/fig-megamath.png"
+                  data-zoom-alt="MegaMath: an open math pretraining pipeline combining web, code, and synthetic data into 371B tokens."
+                  aria-label="Enlarge MegaMath figure"
+                >
+                  <img
+                    src="../assets/img/fig-megamath.png"
+                    alt="MegaMath: an open math pretraining pipeline combining web, code, and synthetic data into 371B tokens."
+                    loading="lazy"
+                  />
+                  <span class="tl-zoom-hint" aria-hidden="true">Click to enlarge</span>
+                </button>
+              </article>
+            </li>
+
+            <li class="tl-item" id="prox">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <span class="tl-date">Sep 2024</span>
+              <article class="tl-card">
+                <div class="tl-body">
+                  <a class="paper-title" href="https://arxiv.org/abs/2409.17115"
+                    >Programming Every Example: Lifting Pre-training Data Quality like Experts at Scale</a
+                  >
+                  <div class="tags" aria-label="Research tags"><span>data-refinement</span><span>tiny-lm</span><span>scaling</span></div>
+                  <p class="venue">ICML 2025</p>
+                  <p class="tldr">
+                    <strong>TL;DR:</strong> Small language models can refine every pretraining example by generating executable operations.
+                  </p>
+                  <div class="paper-links">
+                    <a href="https://arxiv.org/pdf/2409.17115">PDF</a><a href="https://huggingface.co/gair-prox">Data</a
+                    ><a href="https://github.com/GAIR-NLP/ProX">Code</a>
+                  </div>
+                  <button type="button" class="x-disc" data-x-posts="prox" aria-haspopup="dialog">
+                    <svg class="x-logo" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                      />
+                    </svg>
+                    See the discussion <span class="x-disc-count">3</span>
+                  </button>
+                </div>
+                <button
+                  type="button"
+                  class="tl-figure"
+                  data-zoom-src="../assets/img/fig-prox.png"
+                  data-zoom-alt="ProX: tiny language models generate and execute refining operations that turn noisy corpora into clean, high-quality data."
+                  aria-label="Enlarge ProX figure"
+                >
+                  <img
+                    src="../assets/img/fig-prox.png"
+                    alt="ProX: tiny language models generate and execute refining operations that turn noisy corpora into clean, high-quality data."
+                    loading="lazy"
+                  />
+                  <span class="tl-zoom-hint" aria-hidden="true">Click to enlarge</span>
+                </button>
+              </article>
+            </li>
+
+            <li class="tl-item" id="mathpile">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <span class="tl-date">Dec 2023</span>
+              <article class="tl-card">
+                <div class="tl-body">
+                  <a class="paper-title" href="https://openreview.net/forum?id=RSvhU69sbG"
+                    >MathPile: A Billion-Token-Scale Pretraining Corpus for Math</a
+                  >
+                  <div class="tags" aria-label="Research tags"><span>math</span><span>corpus</span><span>contamination</span></div>
+                  <p class="venue">NeurIPS Datasets &amp; Benchmarks 2024</p>
+                  <p class="tldr">
+                    <strong>TL;DR:</strong> A quality-first 9.5B-token math corpus for improving mathematical reasoning in language models.
+                  </p>
+                  <div class="paper-links">
+                    <a href="https://openreview.net/pdf?id=RSvhU69sbG">PDF</a><a href="https://huggingface.co/datasets/GAIR/MathPile">Dataset</a
+                    ><a href="https://github.com/GAIR-NLP/MathPile">Code</a>
+                  </div>
+                  <button type="button" class="x-disc" data-x-posts="mathpile" aria-haspopup="dialog">
+                    <svg class="x-logo" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                      />
+                    </svg>
+                    See the discussion <span class="x-disc-count">4</span>
+                  </button>
+                </div>
+                <button
+                  type="button"
+                  class="tl-figure"
+                  data-zoom-src="../assets/img/fig-mathpile.png"
+                  data-zoom-alt="MathPile: diverse math data sources pass through preprocessing, cleaning, and deduplication into a 9.5B-token corpus."
+                  aria-label="Enlarge MathPile figure"
+                >
+                  <img
+                    src="../assets/img/fig-mathpile.png"
+                    alt="MathPile: diverse math data sources pass through preprocessing, cleaning, and deduplication into a 9.5B-token corpus."
+                    loading="lazy"
+                  />
+                  <span class="tl-zoom-hint" aria-hidden="true">Click to enlarge</span>
+                </button>
+              </article>
+            </li>
+          </ol>
+        </section>
+
+        <footer class="site-footer">
+          <p>&copy; <span data-year>2026</span> Zengzhi Wang.</p>
+        </footer>
+      </main>
+    </div>
+
+    <div class="x-modal" id="xModal" hidden>
+      <div class="x-modal-backdrop" data-x-close></div>
+      <div class="x-modal-panel" role="dialog" aria-modal="true" aria-labelledby="xModalTitle">
+        <div class="x-modal-head">
+          <h3 class="x-modal-title" id="xModalTitle">
+            <svg class="x-logo" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              /></svg
+            ><span data-x-modal-title>Discussion on X</span>
+          </h3>
+          <button type="button" class="x-modal-close" data-x-close aria-label="Close discussion">&#10005;</button>
+        </div>
+        <div class="x-modal-body" id="xModalBody"></div>
+      </div>
+    </div>
+    <div class="img-zoom" id="imgZoom" hidden>
+      <div class="img-zoom-backdrop" data-zoom-close></div>
+      <figure class="img-zoom-panel" role="dialog" aria-modal="true" aria-label="Enlarged figure">
+        <button type="button" class="img-zoom-close" data-zoom-close aria-label="Close figure">&#10005;</button><img id="imgZoomImg" src="" alt="" />
+        <figcaption class="img-zoom-caption" data-zoom-caption></figcaption>
+      </figure>
+    </div>
+    <script src="../script.js?v=13"></script>
+  </body>
+</html>
