@@ -12,7 +12,9 @@ The deployment overlays the new pages without deleting existing blog/news pages
 or their assets. The former Jekyll source remains at the repository root as an
 archive; changing it no longer rebuilds the public website. Old Jekyll-specific
 maintenance workflows are retained for that archive and are not required to
-publish `website/`.
+publish `website/`. The formatting workflow checks the active static website,
+its deployment workflows, and this guide; it does not reformat the archived
+Jekyll content.
 
 ## Check and preview
 

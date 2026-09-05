@@ -1,14 +1,24 @@
-name: Prettier code formatter
+name: Check homepage formatting
 
 on:
   pull_request:
     branches:
       - master
       - main
+    paths:
+      - "website/**"
+      - ".github/workflows/deploy.yml"
+      - ".github/workflows/prettier.yml"
+      - "DEPLOYMENT.md"
   push:
     branches:
       - master
       - main
+    paths:
+      - "website/**"
+      - ".github/workflows/deploy.yml"
+      - ".github/workflows/prettier.yml"
+      - "DEPLOYMENT.md"
 
 jobs:
   check:
@@ -23,12 +33,12 @@ jobs:
         run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
       - name: Prettier Check 🔎
         id: prettier
-        run: npx prettier . --check
+        run: npx prettier 'website/**/*.{html,css,js}' .github/workflows/deploy.yml .github/workflows/prettier.yml DEPLOYMENT.md --check
       - name: Create diff 📝
         # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
         if: ${{ failure() }}
         run: |
-          npx prettier . --write
+          npx prettier 'website/**/*.{html,css,js}' .github/workflows/deploy.yml .github/workflows/prettier.yml DEPLOYMENT.md --write
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
