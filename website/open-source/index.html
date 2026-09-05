@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Open Source | Zengzhi Wang</title>
+    <meta
+      name="description"
+      content="Open datasets, models, and code by Zengzhi Wang, including MegaScience, MegaMath, MathPile, ProX, and OctoThinker."
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css?v=21" />
+    <link rel="stylesheet" href="../refinements.css?v=13.5" />
+  </head>
+  <body class="plain-page" data-root="../">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="topnav">
+        <div class="topnav-inner">
+          <nav class="topnav-links" aria-label="Primary navigation">
+            <a href="../">Home</a><a href="../research/">Research</a><a href="../publications/">Publications</a
+            ><a class="is-active" href="./" aria-current="page">Open Source</a><a href="../updates/">Updates</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page subpage" id="main">
+        <header class="page-masthead open-source-masthead">
+          <div class="page-masthead-grid">
+            <h1>Open Source</h1>
+            <p>
+              Open datasets, code, and models from my recent work. Metrics below are mid-2026 public snapshots and are shown as all-time totals where
+              available.
+            </p>
+          </div>
+        </header>
+
+        <section class="open-source-section open-source-page" aria-labelledby="resources-title">
+          <h2 class="visually-hidden" id="resources-title">Open-source resources</h2>
+          <div class="resource-category-heading">
+            <span>Data</span>
+            <p>Open corpora for scientific and mathematical reasoning.</p>
+          </div>
+          <div class="open-source-grid">
+            <article class="open-source-card open-source-card--featured" id="megascience">
+              <p class="open-source-kind"><span>Post-training data</span><span class="venue-tag">COLM 2026</span></p>
+              <h3><a href="https://huggingface.co/datasets/MegaScience/MegaScience">MegaScience</a></h3>
+              <p>Open post-training datasets for scientific reasoning, including the 1.25M-instance MegaScience mixture and TextbookReasoning.</p>
+              <dl class="open-source-metrics">
+                <div>
+                  <dt>HF · all datasets</dt>
+                  <dd>127.7K downloads</dd>
+                </div>
+                <div>
+                  <dt>Open corpus</dt>
+                  <dd>1.25M instances</dd>
+                </div>
+              </dl>
+              <nav class="open-source-links" aria-label="MegaScience resources">
+                <a href="https://huggingface.co/datasets/MegaScience/MegaScience">Dataset</a
+                ><a href="https://huggingface.co/datasets/MegaScience/TextbookReasoning">TextbookReasoning</a
+                ><a href="https://github.com/GAIR-NLP/MegaScience">Code</a>
+              </nav>
+            </article>
+
+            <article class="open-source-card">
+              <p class="open-source-kind"><span>Pre-training data</span><span class="venue-tag">AI4Math @ ICML 2025</span></p>
+              <h3><a href="https://huggingface.co/datasets/OctoThinker/MegaMath-Web-Pro-Max">MegaMath-Web-Pro-Max</a></h3>
+              <p>A 70B+ token math-web corpus curated and refined for reinforcement-learning-friendly mid-training.</p>
+              <dl class="open-source-metrics">
+                <div>
+                  <dt>Open corpus</dt>
+                  <dd>70B+ tokens</dd>
+                </div>
+                <div>
+                  <dt>Documents</dt>
+                  <dd>69.2M</dd>
+                </div>
+              </dl>
+              <nav class="open-source-links" aria-label="MegaMath-Web-Pro-Max resources">
+                <a href="https://huggingface.co/datasets/OctoThinker/MegaMath-Web-Pro-Max">Dataset</a
+                ><a href="https://arxiv.org/abs/2506.20512">Paper</a><a href="https://github.com/GAIR-NLP/OctoThinker">Code</a>
+              </nav>
+            </article>
+
+            <article class="open-source-card">
+              <p class="open-source-kind"><span>Pre-training data</span><span class="venue-tag">COLM 2025</span></p>
+              <h3><a href="https://huggingface.co/datasets/LLM360/MegaMath">MegaMath</a></h3>
+              <p>A 371B-token open math corpus unifying web, code, and synthetic mathematical data.</p>
+              <dl class="open-source-metrics">
+                <div>
+                  <dt>HF · all time</dt>
+                  <dd>796.5K downloads</dd>
+                </div>
+                <div>
+                  <dt>GitHub</dt>
+                  <dd>110 stars</dd>
+                </div>
+              </dl>
+              <nav class="open-source-links" aria-label="MegaMath resources">
+                <a href="https://huggingface.co/datasets/LLM360/MegaMath">Dataset</a><a href="https://github.com/LLM360/MegaMath">Code</a>
+              </nav>
+            </article>
+
+            <article class="open-source-card">
+              <p class="open-source-kind"><span>Pre-training data</span><span class="venue-tag">NeurIPS D&amp;B 2024</span></p>
+              <h3><a href="https://huggingface.co/datasets/GAIR/MathPile">MathPile</a></h3>
+              <p>A quality-first, 9.5B-token math corpus spanning textbooks, papers, forums, and the web.</p>
+              <dl class="open-source-metrics">
+                <div>
+                  <dt>GitHub</dt>
+                  <dd>418 stars</dd>
+                </div>
+                <div>
+                  <dt>HF · all time</dt>
+                  <dd>7.9K downloads</dd>
+                </div>
+              </dl>
+              <nav class="open-source-links" aria-label="MathPile resources">
+                <a href="https://huggingface.co/datasets/GAIR/MathPile">Dataset</a><a href="https://github.com/GAIR-NLP/MathPile">Code</a>
+              </nav>
+            </article>
+          </div>
+
+          <div class="resource-category-heading">
+            <span>Models &amp; tools</span>
+            <p>Ways to refine corpora and study reasoning behavior.</p>
+          </div>
+          <div class="open-source-grid">
+            <article class="open-source-card">
+              <p class="open-source-kind"><span>Data refinement</span><span class="venue-tag">ICML 2025</span></p>
+              <h3><a href="https://github.com/GAIR-NLP/ProX">ProX</a></h3>
+              <p>Tiny language models that programmatically refine corpora, with 500B+ open DCLM-Pro tokens.</p>
+              <dl class="open-source-metrics">
+                <div>
+                  <dt>GitHub</dt>
+                  <dd>270 stars</dd>
+                </div>
+                <div>
+                  <dt>HF · all resources</dt>
+                  <dd>235.2K downloads</dd>
+                </div>
+              </dl>
+              <nav class="open-source-links" aria-label="ProX resources">
+                <a href="https://github.com/GAIR-NLP/ProX">Code</a><a href="https://huggingface.co/datasets/gair-prox/DCLM-pro">Dataset</a>
+              </nav>
+            </article>
+
+            <article class="open-source-card">
+              <p class="open-source-kind"><span>Models &amp; pre-training data</span><span class="venue-tag">AI4Math @ ICML 2025</span></p>
+              <h3><a href="https://github.com/GAIR-NLP/OctoThinker">OctoThinker</a></h3>
+              <p>Open mid-training recipes, models, and pre-training data for reinforcement-learning-friendly reasoning.</p>
+              <dl class="open-source-metrics">
+                <div>
+                  <dt>GitHub</dt>
+                  <dd>189 stars</dd>
+                </div>
+                <div>
+                  <dt>HF · all resources</dt>
+                  <dd>171K downloads</dd>
+                </div>
+              </dl>
+              <nav class="open-source-links" aria-label="OctoThinker resources">
+                <a href="https://github.com/GAIR-NLP/OctoThinker">Code</a><a href="https://huggingface.co/OctoThinker">Models</a
+                ><a href="https://huggingface.co/datasets/OctoThinker/MegaMath-Web-Pro-Max">Data</a>
+              </nav>
+            </article>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <p>&copy; <span data-year>2026</span> Zengzhi Wang.</p>
+        </footer>
+      </main>
+    </div>
+    <script src="../script.js?v=13"></script>
+  </body>
+</html>
